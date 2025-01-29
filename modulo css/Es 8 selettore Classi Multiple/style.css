@@ -1,0 +1,24 @@
+.center{
+  text-align: center;
+  background-color: blueviolet;
+  color: bisque;
+  font: 30px;
+}
+
+h5.center{
+  text-align: right;
+  background-color: aquamarine;
+  color: blue;
+}
+
+h5.large{
+  text-align: right;
+  background-color: aquamarine;
+  color: blue;
+}
+
+.large{
+  text-align: left;
+  background-color: coral;
+  color: brown;
+}
