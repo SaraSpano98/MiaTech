@@ -1,0 +1,29 @@
+h1 {
+    color: red;
+    text-align: left;
+  }
+
+h2{
+    color:chocolate;
+    text-align: left;
+  } 
+h3{
+    color: burlywood;
+    text-align: left;
+  }
+h4{
+    color: darkgoldenrod;
+    text-align: left;
+  }
+h5{
+    color: deeppink;
+    text-align: left;
+  }
+h6{
+    color: darkturquoise;
+    text-align: left;
+  }
+p{
+    color: indianred;
+    text-align: left;
+  }
