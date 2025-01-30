@@ -7,3 +7,4 @@ ul li:last-of-type::after {
   content: " (Ultimo elemento)";
   font-style: italic;
   color: gray;
+}
