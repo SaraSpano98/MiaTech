@@ -3,8 +3,7 @@ ul li:last-of-type::before {
   font-weight: bold;
 }
 
-ul li:last-of-type::after {
-  content: " (Ultimo elemento)";
+ul li:last-of-type{
   font-style: italic;
   color: gray;
 }
