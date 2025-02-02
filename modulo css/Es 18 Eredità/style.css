@@ -1,14 +1,5 @@
-/* Regola per tutti i paragrafi */
-p{
-  color:blue;
-}
-
-/* Regola per la classe */
-.paragrafo-classe{
-  color:green; 
-}
-
-/* Regola per l'ID */
-#paragrafo-id {
-  color: red;
+/* Stile per il div */
+.container{
+  text-align: center;
+  color:blueviolet;
 }
