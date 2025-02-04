@@ -3,4 +3,7 @@
     padding-top: 50%;
     background-color: darkorchid;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
