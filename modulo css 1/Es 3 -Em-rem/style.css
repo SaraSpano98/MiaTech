@@ -1,3 +1,11 @@
+html{
+    font-size: 5px;
+}
+
+.container{
+    font-size: 10px;
+}
+
 .size-7rem{
     font-size: 7rem;
     color: darkgreen;
@@ -8,3 +16,4 @@
     color: darkmagenta;
 
 }
+
