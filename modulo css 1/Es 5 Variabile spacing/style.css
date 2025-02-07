@@ -1,0 +1,18 @@
+:root{
+    --colore-azzurrino: aqua; /* Definizione della variabile */
+    --padding:15px;
+    --colore-violetto: violet;
+    
+
+}
+
+body{
+    background-color: var(--colore-violetto);
+}
+.container {
+    color: var(--colore-violetto);
+    background-color: var(--colore-azzurrino);
+    padding: var(--padding);
+  }
+
+
