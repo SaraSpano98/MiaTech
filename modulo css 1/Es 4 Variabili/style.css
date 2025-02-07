@@ -1,0 +1,7 @@
+:root{
+    --colore-rosso: red; /* Definizione della variabile */
+}
+
+*{
+    color: var(--colore-rosso); /* Applicazione a tutti gli elementi */
+}
