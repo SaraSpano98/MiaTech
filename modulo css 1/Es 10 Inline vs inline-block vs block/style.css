@@ -1,0 +1,22 @@
+.common-style {
+    width: 100px;
+    height: 50px;
+    background-color: lightcoral;
+    border: 2px solid black;
+    text-align: center;
+    margin: 5px;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+
