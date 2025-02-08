@@ -1,0 +1,15 @@
+body{
+    background-color: bisque;
+}
+
+#myDIV{
+    height: 400px;
+    width: 700px;
+    background-color: burlywood;
+}
+
+img{
+    float: right;
+    width: 500px;
+    height:300px;
+}
