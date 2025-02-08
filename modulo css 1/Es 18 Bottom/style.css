@@ -30,3 +30,16 @@ body {
     height: 1500px; /* Altezza per permettere lo scroll */
     background-color: rgba(112, 74, 74, 0.896);
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    z-index: 1000;
+}
