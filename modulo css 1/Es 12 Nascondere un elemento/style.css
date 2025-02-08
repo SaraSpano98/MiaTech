@@ -1,0 +1,14 @@
+body{
+    background-color: aquamarine;
+}
+
+#myDIV{
+    height: 300px;
+    width: 400px;
+    background-color: chartreuse;
+}
+
+span{
+    background: lightskyblue;
+    visibility: hidden;
+}
