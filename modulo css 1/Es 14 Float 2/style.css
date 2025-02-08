@@ -1,0 +1,30 @@
+body {
+    background-color: bisque;
+}
+
+#myDIV {
+    height: 800px;
+    width: 700px;
+}
+
+.primo-paragrafo {
+    background-color: goldenrod;
+    width: auto;
+    height: 300px;
+    width: 550px;
+}
+
+.primo-paragrafo img {
+    float: inline-start;
+    height: 150px;
+    width: 250px;
+}
+
+.secondo-paragrafo {
+    clear: both;
+    /* Fa sì che questo paragrafo appaia sotto al primo */
+    margin-top: 20px;
+    background-color: orangered;
+    height: 200px;
+    width: 550px;
+}
