@@ -1,0 +1,16 @@
+body {
+    background-color: bisque;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tre colonne uguali */
+    gap: 10px;
+}
+
+.container p {
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: lightcoral;
+}
