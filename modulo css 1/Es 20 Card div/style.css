@@ -44,6 +44,7 @@ body {
     width: 300px;
     margin: 10px auto;
     text-align: center;
+    position: relative;
 }
 
 .card__img img {
@@ -52,6 +53,18 @@ body {
     border-radius: 15%;
     margin-right: 15px;
 }
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    cursor: pointer;
+  }
 
 .card h4 {
     margin: 0;
