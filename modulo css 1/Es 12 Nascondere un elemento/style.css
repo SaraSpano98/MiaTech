@@ -10,5 +10,5 @@ body{
 
 span{
     background: lightskyblue;
-    visibility: hidden;
+    display: none;
 }
