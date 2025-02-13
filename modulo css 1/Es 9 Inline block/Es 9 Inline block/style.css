@@ -1,4 +1,4 @@
-div {
+div{
     border: 3px solid black;
     margin-right: 50px;
     margin-left: 50px;
@@ -8,4 +8,6 @@ div {
     display: inline-block;
 }
 
-
+ul#menu li{
+    display: inline-block;
+}
