@@ -11,7 +11,7 @@
 }
 
 .box{
-    width: 100px;
+    flex-grow: 1;
     height: 100px;
     background-color: rgb(181, 6, 102);
     display: flex;
@@ -23,8 +23,7 @@
     border: 1px solid #000000;
 }
 
-.box:nth-child(3){
-    height: 70px;
-    width: 70px;
+.box:nth-child(1){
+    flex-grow: 0.5;
     font-size: 14px;
 }
