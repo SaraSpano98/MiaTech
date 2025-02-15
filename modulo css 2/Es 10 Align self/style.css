@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: aqua;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    height: 100vh;
+}
+
+.box{
+    flex-grow: 1;
+    height: 100px;
+    background-color: rgb(181, 6, 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid #000000;
+}
+
+.box:nth-child(1){
+    align-self: flex-start;
+}
+
+.box:nth-child(2) {
+    flex-basis: 200px;
+}
+
+.box:nth-child(3){
+    align-self: flex-end;
+}
