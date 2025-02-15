@@ -1,0 +1,17 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonne di uguale larghezza */
+    grid-gap: 10px; /* Spaziatura tra gli elementi */
+    width: 300px; /* Larghezza del container */
+    margin: 0 auto; /* Centra il container orizzontalmente */
+    padding: 10px;
+}
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff981a;
+    border: 1px solid #97003a;
+    height: 80px; /* Altezza degli elementi */
+    font-size: 20px;
+}
