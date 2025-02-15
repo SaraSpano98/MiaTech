@@ -1,0 +1,23 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonne di uguale larghezza */
+    grid-template-rows: repeat(3, 1fr); /* 3 righe di uguale altezza */
+    grid-gap: 10px; /* Spaziatura tra gli elementi */
+    width: 300px; /* Larghezza del container */
+    margin: 0 auto; /* Centra il container orizzontalmente */
+    padding: 10px;
+}
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff981a;
+    border: 1px solid #97003a;
+    height: 80px; /* Altezza degli elementi */
+    font-size: 20px;
+}
+
+.grid-item-8-9 {
+    grid-column: span 2 / 4; /* Unisce le celle 8 e 9 occupando la seconda e la terza colonna */
+    grid-row: 3; /* Colloca l'elemento sulla terza riga */
+}
