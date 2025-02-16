@@ -1,0 +1,87 @@
+/* Centra la calcolatrice nella pagina con display grid */
+body {
+    background-color: bisque;
+}
+
+
+/* Display-Contenitore */
+.display {
+    display: grid;
+    grid-template-rows: repeat(1, 5fr); /*righe*/
+    grid-template-columns: repeat(4, 1fr); /*colonne*/
+    color: black;
+    text-align: right;
+    font-size: 1.8em; /* Un po' più piccolo per fare più spazio */
+    padding: 15px;
+    border-radius: 5px;
+    height: 400px;
+    width: 350px;
+    background-color: aquamarine;
+    gap:5px;
+
+    /*centra gli elementi all'interno della griglia*/
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra esattamente */
+}
+
+/* Bottoni */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 18px; 
+    padding: 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 300px; 
+    width: 300px;
+    max-width: 60%; /* I pulsanti occupano tutta la larghezza della cella */
+}
+
+/* Hover */
+.btn:hover {
+    background: #fffdfd;
+}
+
+/* Pulsanti speciali */
+.btn-clear { background: red; color: white; } 
+.btn-delete { background: darkred; color: white; }
+.btn-percent { background: purple; color: white; }
+.btn-operator { background: orange; color: white; }
+.btn-equals { background: green; color: white; } 
+.btn-negate { background: darkblue; color: white; }
+.btn_virgola{background: rgb(66, 152, 163); color: white; }
+
+.input{
+    position: relative;
+    display: flex;
+    height: 100px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RESPONSIVE DESIGN PER MOBILE */
+@media (max-width: 400px) {
+    .calculator {
+        width: 95%; /* Adatta ancora meglio */
+        max-width: 260px; /* Limita la larghezza su schermi molto piccoli */
+    }
+    
+    .btn {
+        font-size: 1.3em; /* Testo più piccolo su schermi stretti */
+        height: 45px; /* Pulsanti più piccoli su mobile */
+    }
+
+    .display {
+        font-size: 1.8em; /* Adatta la grandezza del testo */
+        padding: 12px;
+    }
+}
