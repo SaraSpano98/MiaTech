@@ -16,3 +16,7 @@
 .grid-item-8-9{
     grid-column: span 4;
 }
+
+.grid-item{
+    grid-row: span 4;
+}
