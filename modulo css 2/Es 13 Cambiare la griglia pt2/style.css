@@ -1,4 +1,4 @@
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 6px;
@@ -6,13 +6,22 @@
     background-color: rgb(128, 250, 246);
     border: 7px solid blue;
 }
-.grid-container div{
+
+.grid-container div {
     border: 2px solid black;
     text-align: center;
     padding: 10px;
     line-height: 50px;
-    border: 4px solid rgb(163, 0, 84) ;
+    border: 4px solid rgb(163, 0, 84);
 }
-.item1{
-    grid-column: span 4;
+
+.item1-4 {
+    grid-row: span 4;
+}
+
+.item2,
+.item3,
+.item5,
+.item6 {
+    grid-column: span 2;
 }
