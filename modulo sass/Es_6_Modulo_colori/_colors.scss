@@ -1,0 +1,20 @@
+// Variabili dei colori principali
+$primary-color: #3498db;    // Blu
+$secondary-color: #2ecc71;  // Verde
+$accent-color: #e74c3c;     // Rosso
+
+// Colori di testo
+$text-color: #333;          // Colore del testo principale
+$heading-color: #222;       // Colore per i titoli
+
+// Colori di sfondo
+$background-color: #ecf0f1; // Grigio chiaro
+$footer-background-color: #34495e; // Grigio scuro
+
+// Colori per i pulsanti
+$button-primary-bg: $primary-color;
+$button-primary-hover-bg: darken($primary-color, 10%);
+$button-secondary-bg: $secondary-color;
+$button-secondary-hover-bg: darken($secondary-color, 10%);
+
+//_colors.scss: Questo file contiene tutte le variabili per i colori, così si può centralizzare e riutilizzare facilmente i colori nel tuo progetto.

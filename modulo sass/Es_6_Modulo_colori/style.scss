@@ -1,0 +1,20 @@
+// Importa il modulo dei colori
+@import 'colors';
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+h1 {
+  color: $heading-color;
+}
+
+button {
+  background-color: $button-primary-bg;
+  &:hover {
+    background-color: $button-primary-hover-bg;
+  }
+}
+
+//styles.scss: Il file principale in cui si può importare il modulo dei colori. Qui si utilizza le variabili per impostare i colori di vari elementi, come il corpo, i titoli, i pulsanti, ecc.
