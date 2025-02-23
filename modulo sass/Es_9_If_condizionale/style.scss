@@ -1,0 +1,14 @@
+// Funzione per convertire px in em
+@function px-to-em($px, $base: 16) {
+    @return $px / $base * 1em;
+  }
+  
+  // Utilizzo della funzione in un mixin
+  @mixin font-size($px) {
+    font-size: px-to-em($px);
+  }
+  
+  // Esempio di utilizzo in una classe
+  .example {
+    @include font-size(18); // Questo applicherà font-size 18px convertito in em
+  }
