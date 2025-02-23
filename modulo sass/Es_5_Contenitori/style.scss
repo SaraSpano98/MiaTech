@@ -1,0 +1,59 @@
+// Variabili (opzionali per un miglior mantenimento)
+$primary-bg-color: #875f5f;
+$text-color: #fff;
+$box-bg-color: #b7feff;
+$padding: 20px;
+
+// Stili generali
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+// Navbar
+nav {
+    background-color: $primary-bg-color;
+    color: $text-color;
+    padding: $padding;
+    text-align: center;
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+    }
+}
+
+// Contenitore principale
+.container {
+    display: flex;
+    margin-top: 20px;
+    padding: $padding;
+
+    .box {
+        padding: $padding;
+        background-color: $box-bg-color;
+        margin: 10px;
+
+        &-1 {
+            flex: 1; // 1/3 della larghezza rispetto al secondo box
+        }
+
+        &-2 {
+            flex: 2; // 2/3 della larghezza
+        }
+    }
+}

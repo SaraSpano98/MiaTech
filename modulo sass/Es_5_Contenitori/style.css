@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #875f5f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+}
+.container .box {
+  padding: 20px;
+  background-color: #b7feff;
+  margin: 10px;
+}
+.container .box-1 {
+  flex: 1;
+}
+.container .box-2 {
+  flex: 2;
+}
+
+/*# sourceMappingURL=style.css.map */
