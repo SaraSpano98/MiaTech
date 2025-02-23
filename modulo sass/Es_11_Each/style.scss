@@ -1,0 +1,8 @@
+$colors: #ff00ff, #00ff00, #0000ff, #ff9900;
+
+@each $color in $colors {
+  $i: index($colors, $color); // Assegna l'indice a una variabile
+  .menu-item-#{$i} {
+    color: $color;
+  }
+}
