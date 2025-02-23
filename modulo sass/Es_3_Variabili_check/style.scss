@@ -1,0 +1,45 @@
+$bg-color: #f5c0c0;
+$text-color: rgb(97, 15, 83);
+$hover-color: #ff0000;
+$font-size: 18px;
+$display: flex;
+$font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+.navbar {
+    background-color: $bg-color;
+    padding: 15px;
+    display: $display;
+    justify-content: center;
+
+    ul {
+        margin: 0;
+        padding: 0px;
+        list-style: none;
+        display: $display;
+        gap: 15px;
+    }
+
+    li {
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+            color: $text-color;
+            padding: 5px 10px;
+            border-radius: 5px;
+
+            font: {
+                family: $font-family;
+                size: $font-size;
+                weight: bold;
+            }
+
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
+
+
+}
