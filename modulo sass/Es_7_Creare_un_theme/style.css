@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #f8f9fa;
+}
+.navbar a {
+  color: #007bff;
+}
+.navbar a:hover {
+  color: #0056b3;
+}
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background-color: #000000;
+  }
+  .navbar a {
+    color: #ffffff;
+  }
+  .navbar a:hover {
+    color: #ffcc00;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

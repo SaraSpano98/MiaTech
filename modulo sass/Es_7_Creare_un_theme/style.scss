@@ -1,0 +1,43 @@
+@mixin navbar-theme($theme: light) {
+    // Colori predefiniti per tema chiaro
+    $navbar-light-bg: #f8f9fa;
+    $navbar-light-link: #007bff;
+    $navbar-light-link-hover: #0056b3;
+  
+    // Colori per il tema scuro
+    $navbar-dark-bg: #000000;
+    $navbar-dark-link: #ffffff;
+    $navbar-dark-link-hover: #ffcc00;
+  
+    // Applica il tema
+    @if $theme == light {
+      background-color: $navbar-light-bg;
+      a {
+        color: $navbar-light-link;
+        &:hover {
+          color: $navbar-light-link-hover;
+        }
+      }
+    }
+  
+    @else if $theme == dark {
+      background-color: $navbar-dark-bg;
+      a {
+        color: $navbar-dark-link;
+        &:hover {
+          color: $navbar-dark-link-hover;
+        }
+      }
+    }
+  }
+  
+  // Esempio di utilizzo del mixin
+  .navbar {
+    // Applica il tema chiaro di default
+    @include navbar-theme(light);
+  
+    // Responsività, puoi anche cambiare tema per media query se necessario
+    @media (prefers-color-scheme: dark) {
+      @include navbar-theme(dark);
+    }
+  }
