@@ -1,0 +1,22 @@
+%extend {
+    background-color: #e7e7e7;
+}
+
+.Navbar {
+    ul {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 15px;
+    }
+
+    .nav-item {
+        padding: 10px;
+    }
+
+    .nav-item-last-item {
+        @extend %extend; //estende lo sfondo a questa voce
+        border: 1px solid #333333;  //aggiunge il bordo
+    }
+}

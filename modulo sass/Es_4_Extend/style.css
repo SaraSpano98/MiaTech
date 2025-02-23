@@ -1,0 +1,19 @@
+.Navbar .nav-item-last-item {
+  background-color: #e7e7e7;
+}
+
+.Navbar ul {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 15px;
+}
+.Navbar .nav-item {
+  padding: 10px;
+}
+.Navbar .nav-item-last-item {
+  border: 1px solid #333333;
+}
+
+/*# sourceMappingURL=style.css.map */
