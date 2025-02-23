@@ -1,0 +1,26 @@
+// Variabile per attivare o disattivare l'effetto hover
+$nohover: false; // Imposta su true per disattivare l'effetto hover
+
+// Stile della navbar
+.navbar-container {
+  .navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    background-color: #333;
+    
+    .nav-item {
+      padding: 10px;
+      color: #fff;
+      transition: color 0.3s;
+
+      // Controlla se $nohover è true o false
+      &:hover {
+        @if $nohover == false {
+          color: #ff6347; // Colore di hover se $nohover è false
+        }
+      }
+    }
+  }
+}

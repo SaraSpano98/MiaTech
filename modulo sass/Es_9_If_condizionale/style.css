@@ -1,0 +1,17 @@
+.navbar-container .navbar {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  background-color: #333;
+}
+.navbar-container .navbar .nav-item {
+  padding: 10px;
+  color: #fff;
+  transition: color 0.3s;
+}
+.navbar-container .navbar .nav-item:hover {
+  color: #ff6347;
+}
+
+/*# sourceMappingURL=style.css.map */
