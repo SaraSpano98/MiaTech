@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuovo Esercizio</title>
+    <link rel="stylesheet" href="index.js">
+</head>
+
+<body>
+    <h1>The Window Object</h1>
+    <h2>Il prompt metodo</h2>
+
+    <p> La parola che hai inserito è: <span id="output"></span></p>
+
+    <script>
+        let word = prompt("Inserisci una parola");
+
+        if (word !== null && word.trim() !== ""){
+            console.log("Hai inserito:", word); //stampa in console
+            document.getElementById("output").textContent = word; // Mostra la parola nella pagina
+        } else{
+            console.log("Nessuna parola inserita.");
+            document.getElementById("output").textContent = "Nessuna parola inserita.";
+        }
+    </script>
+
+</body>
+
+</html>
