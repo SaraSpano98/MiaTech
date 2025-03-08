@@ -7,4 +7,4 @@ const student = {
 
 const keys = Object.keys(student);
 
-console.log(student);
+console.log(keys);
