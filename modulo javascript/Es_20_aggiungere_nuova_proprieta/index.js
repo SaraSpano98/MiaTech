@@ -1,13 +1,10 @@
 let person = {
     name: "Alessio",
     age: 30, 
-    city: "Milano"
+    city: "Milano",
+    job: "Software tester"
 }; 
 
 console.log(person);
 
-let obj = {
-    job: "software tester"
-};
-
-console.log(obj);
+console.log(person.job);
