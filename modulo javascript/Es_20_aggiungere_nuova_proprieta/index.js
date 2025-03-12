@@ -2,8 +2,9 @@ let person = {
     name: "Alessio",
     age: 30, 
     city: "Milano",
-    job: "Software tester"
 }; 
+
+person.job= "software tester"
 
 console.log(person);
 
