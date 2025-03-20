@@ -1,6 +1,6 @@
-const spesa = ['verdure', 'detersivi per il bagno', 'affettatati', 'pacchi di acqua'];
+const numeri = [10, 20, 30, 40, 50];
 
-const [primo, secondo] = spesa;
+const [primo, secondo] = numeri;
 
-console.log(spesa);
-console.log(primo, secondo);
+console.log("Primo numero", primo);
+console.log("Secondo numero", secondo);
