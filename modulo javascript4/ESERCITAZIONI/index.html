@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <select id="limit">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="*">All</option>
+        </select>
+        <button id="prev">prev</button>
+        <span id="page"></span>
+        <button id="next">next</button>
+        <select id="sort">
+            <option value="id-ASC">id ascendente</option>
+            <option value="id-DESC">id discendente</option>
+            <option value="title-ASC">title ascendente</option>
+            <option value="title-DESC">title discendente</option>
+        </select>
+        <select id="filter">
+            <option value="id-COMPLETED">id completed</option>
+            <option value="id-NOT COMPLETED">id not completed</option>
+            <option value="title-COMPLETED THE TRUE">title not completed</option>
+            <option value="title-COMPLETED FALLS">title completed falls</option>
+        </select>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>user id</th>
+                <th>id</th>
+                <th>title</th>
+                <th>body</th>
+            </tr>
+        </thead>
+        <tbody id="data-body"></tbody>
+    </table>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
