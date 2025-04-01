@@ -42,8 +42,8 @@ const state = {
         mode: "ASC",
     },
     filtering: {
-        key: "id",
-        mode: "COMPLETED"
+        key: null,
+        value: "*",
     }
 };
 
@@ -66,24 +66,16 @@ const utilities = {
             }
         })
     },
-    filteredData: (data) => {
-            return data.filtering((a, b) => {
-                if (state.filtering.key == "id") {
-                    if (state.filtering.mode == "COMPLETED") {
-                        return a[state.filtering.key] - b[state.filtering.key]
-                    } else {
-                        return b[state.filtering.key] - a[state.filtering.key]
-                    }
-                } else {
-                    if (state.filtering.mode == "COMPLETED") {
-                        return a[state.filtering.key].localeCompare(b[state.filtering.key])
-                    } else {
-                        return b[state.filtering.key].localeCompare(a[state.filtering.key])
-                    }
-                }
-            })
+    filterData: (data) => {
+        if (state.filtering.key == null && state.filtering.value == "*") {
+            return data;
         }
+
+        return data.filter((item) => {
+            return item[state.filtering.key] == JSON.parse(state.filtering.value)
+        })
     }
+}
 
 // 4
 const fetchData = async () => {
@@ -104,11 +96,13 @@ const fetchData = async () => {
 
 // 5.1
 const paginateData = () => {
-    state.pagination.totalPages = Math.ceil(state.cache.length / state.pagination.limit);
+    const filteredData = utilities.filterData([...state.cache]);
+
+    state.pagination.totalPages = Math.ceil(filteredData.length / state.pagination.limit);
     const startIndex = state.pagination.limit * (state.pagination.page - 1);
     //10 * (1 - 1) = 0-9
     //10 * (2 - 1) = 10-19
-    state.data = utilities.filteredData([...state.cache]).sortData([...state.cache]).splice(startIndex, state.pagination.limit);
+    state.data = utilities.sortData([...filteredData]).splice(startIndex, state.pagination.limit);
     state.pagination.hasPrevPage = state.pagination.page > 1;
     state.pagination.hasNextPage = state.pagination.page < state.pagination.totalPages;
 
@@ -139,7 +133,7 @@ const render = () => {
             <td>${item.userId}</td>
             <td>${item.id}</td>
             <td>${item.title}</td>
-            <td>${item.body}</td>
+            <td>${item.completed ? "yes" : "no"}</td>
         </tr>
         `
     }).join("");
@@ -179,9 +173,15 @@ const manageListeners = () => {
     });
 
     $filterSelect.addEventListener("change", (event) => {
-        const [key, mode] = event.target.value.split("-");
-        state.filtering.key = key;
-        state.filtering.mode = mode;
+        if (event.target.value == "*") {
+            state.filtering.key = null;
+            state.filtering.value = "*";
+        } else {
+            const [key, value] = event.target.value.split("-");
+            state.filtering.key = key;
+            state.filtering.value = value;
+        }
+        state.pagination.page = 1;
         paginateData();
         render();
     })

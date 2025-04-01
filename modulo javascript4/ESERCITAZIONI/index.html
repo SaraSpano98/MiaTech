@@ -23,10 +23,9 @@
             <option value="title-DESC">title discendente</option>
         </select>
         <select id="filter">
-            <option value="id-COMPLETED">id completed</option>
-            <option value="id-NOT COMPLETED">id not completed</option>
-            <option value="title-COMPLETED THE TRUE">title not completed</option>
-            <option value="title-COMPLETED FALLS">title completed falls</option>
+           <option value="*">All</option>
+           <option value="completed-true">completed</option>
+           <option value="completed-false">not completed</option>
         </select>
     </div>
     <table>
@@ -35,7 +34,7 @@
                 <th>user id</th>
                 <th>id</th>
                 <th>title</th>
-                <th>body</th>
+                <th>completed</th>
             </tr>
         </thead>
         <tbody id="data-body"></tbody>
