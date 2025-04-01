@@ -1,17 +1,18 @@
-//FUNZIONE PRINCIPALE 
-function somma (a, b, callback) {
-    let risultato = a+b;
-    callback(risultato);   //CHIAMO LA CALLBACK CON IL RISULTATO
+function eseguiOperazione(a, b, callback) {
+    let risultato = a + b;
+    console.log("Risultato della somma:", risultato);
+    
+    // Eseguo la callback
+    callback();
 }
 
-//FUNZIONE DI CALLBACK
-function stampa(valore) {
-    console.log("Il risultato della somma è:"  + valore);
-   
+// Callback che viene eseguito dopo l'operazione
+function dopoOperazione() {
+    console.log("Operazione completata! Eseguita la callback.");
 }
 
-//PASSO LA FUNZIONE STAMPA COME CALLBACK
-somma(9, 13, stampa)
+// Chiamata alla funzione con callback
+eseguiOperazione(5, 10, dopoOperazione);
 
 //Una callback è semplicemente una funzione che viene passata come argomento a un'altra funzione e che
 //viene eseguita in un secondo momento (dopo che l'operazione principale è terminata).
