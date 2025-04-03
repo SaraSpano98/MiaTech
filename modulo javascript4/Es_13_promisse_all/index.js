@@ -20,3 +20,15 @@ Promise.all([primaPromessa(), secondaPromessa()])
     .catch(error => {
         console.error("Errore in una delle promesse:", error);
     });
+
+
+//SPIEGAZIONE CONCETTUALE DI PROMISE.ALL:
+// Promise.all() è un metodo in Javascript che accetta un array di promesse e le esegue in parallelo. 
+//Restituisce una singola promessa che:
+// 1- SI RISOLVE quando TUTTE le promesse nell'array sono risolte, restituendo un array con i loro risultati.
+// 2- SI RIFIUTA immediatamente se UNA QUALSIASI PROMESSA FALLISCE, restituendo l'errore della prima promessa rifiutata.
+
+//QUINDI:
+// esegue in parallelo, l'ordine dei risultati corrisponde all'ordine delle promesse nell'array (indipendetemente da quale si risolve per prima) e, 
+//Se una promessa viene rifiutata, l'intera promise.all fallisce subito: infatti, NESSUN'ALTRO RISULTATO VERRA' RESTITUITO, 
+//PROPRIO PERCHè FALLISCE. 
