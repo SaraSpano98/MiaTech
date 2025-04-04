@@ -11,14 +11,6 @@ async function attendiPromessa() {
     } catch (errore) {
         console.log("Errore trovato:", errore);
     }
-
-    try {
-        const erroreMessaggio = await nuovaPromessa();
-        console.log(erroreMessaggio);
-    } catch (errore) {
-        console.log("Errore catturato nella seconda Promessa", errore);
-    }
-
 }
 
 attendiPromessa();
