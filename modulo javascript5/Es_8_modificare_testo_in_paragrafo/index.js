@@ -1,7 +1,7 @@
 const p = document.getElementById("paragrafo");
 
 // Leggo il testo
-console.log(p.innerText); // Stampa: Ciao!
+console.log(p.innerText); 
 
 // Cambio il testo
 p.innerText = "Questo è il mio paragrafo che è stato cambiato!";
