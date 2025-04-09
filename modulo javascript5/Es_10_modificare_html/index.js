@@ -2,7 +2,7 @@ const p = document.getElementById("paragrafo");
 const btn = document.getElementById("Change");
 
 btn.addEventListener("click", function() {
-    p.innerHTML = "Questo è il mio paragrafo che è stato cambiato!";
+    p.innerHTML = "<button>Bottone</button>";
     console.log(p.innerHTML);
 })
 
