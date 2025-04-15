@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuovo Esercizio</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: "#4A90E2",
+              secondary: "#50E3C2",
+              accent: "#F5A623",
+              dark: "#2C3E50",
+              light: "#ECF0F1",
+            },
+          }
+        }
+      }
+    }
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+  <h1 class="text-brand-dark text-2xl underline font-bold mb-6"></h1>
+
+  <button class="bg-brand-primary text-white px-5 py-3 rounded-lg mr-4 hover:brightness-110 transition">Primario</button>
+  <button class="bg-brand-secondary text-white px-5 py-3 rounded-lg mr-4 hover:brightness-110 transition">Secondario</button>
+  <button class="bg-brand-accent text-white px-5 py-3 rounded-lg mr-4 hover:brightness-110 transition">Accento</button>
+  <button class="bg-brand-dark text-white px-5 py-3 rounded-lg hover:brightness-110 transition">Scuro</button>
+
+</body>
+</html>
