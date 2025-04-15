@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuovo Esercizio</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: "#4A90E2",
+              secondary: "#50E3C2",
+              accent: "#F5A623",
+              dark: "#2C3E50",
+              light: "#ECF0F1",
+            },
+          }
+        }
+      }
+    }
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+   <!-- HEADER -->
+   <header class="mb-8">
+    <h1 class="text-4xl font-bold text-brand-primary">Benvenuto nel mio sito</h1>
+    <p class="text-brand-secondary text-lg mt-2 max-w-2xl">
+      Questo è un layout semplice che utilizza <strong>colori personalizzati</strong> definiti nella palette Tailwind.
+    </p>
+  </header>
+
+  <!-- CONTENUTO -->
+  <main class="space-y-6">
+    <section>
+      <h2 class="text-2xl font-semibold text-brand-dark mb-2">Sezione Informativa</h2>
+      <p class="text-brand-secondary">
+        I colori aiutano a creare un’interfaccia coerente. Con Tailwind puoi definire i tuoi colori e riutilizzarli ovunque.
+        Guarda la <a href="#" class="text-brand-accent underline hover:text-brand-primary transition">documentazione</a> per saperne di più.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-brand-dark mb-2">Contattaci</h2>
+      <p class="text-brand-secondary">
+        Per domande, <a href="mailto:info@example.com" class="text-brand-accent hover:text-brand-primary underline">scrivici una mail</a>!
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-12 border-t pt-6 text-sm text-brand-dark">
+    &copy; 2025 - Tutti i diritti riservati.
+  </footer>
+
+
+</body>
+</html>
