@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuovo Esercizio</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: "#4A90E2",
+              secondary: "#50E3C2",
+              accent: "#F5A623",
+              dark: "#2C3E50",
+              light: "#ECF0F1",
+            },
+          }
+        }
+      }
+    }
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+  <section class="bg-brand-light text-brand-dark font-sans p-8 space-y-8">
+    <h1 class="text-brand-dark text-2xl underline font-bold mb-6">Benvenuto in questa pagina!</h1>
+    <p class="text-2xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cumque omnis rerum, mollitia magnam provident tempora suscipit, id perspiciatis, deserunt eius nobis temporibus dolor asperiores nam molestias? Totam, quisquam obcaecati!</p>
+  </section>
+  
+  <div class="bg-white border-4 border-brand-secondary p-6 rounded-lg shadow-md">
+    <h2 class="text-xl font-semibold text-brand-dark">Card con bordo secondario</h2>
+    <p class="text-brand-dark mt-2">Questa card ha un bordo evidenziato con il colore <strong>secondario</strong>.</p>
+  </div>
+
+  <div class="bg-brand-accent text-white p-5 rounded-lg">
+    <h3 class="text-lg font-medium">Attenzione!</h3>
+    <p>Usa il colore <strong>accent</strong> per richiamare l'attenzione.</p>
+  </div>
+
+  <div class="bg-brand-dark text-white p-6 rounded-xl shadow-lg">
+    <h2 class="text-xl font-semibold">Card Scura</h2>
+    <p class="mt-2">Ottima per dark sections o footer.</p>
+  </div>
+
+</body>
+</html>
