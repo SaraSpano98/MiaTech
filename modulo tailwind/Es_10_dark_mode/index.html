@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                brand: {
-                  primary: "#4A90E2",
-                  secondary: "#50E3C2",
-                  accent: "#F5A623",
-                  dark: "#2C3E50",
-                  light: "#ECF0F1",
-                },
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        darkMode: "media",
+        extend: {
+          colors: {
+            brand: {
+              primary: "#4A90E2",
+              secondary: "#50E3C2",
+              accent: "#F5A623",
+              dark: "#2C3E50",
+              light: "#ECF0F1",
+            },
           }
         }
-      </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
-    <header class="mb-8">
-        <h1 class="text-4xl font-bold text-brand-primary dark:text-brand-secondary">
-          Modalità Chiara & Scura
-        </h1>
-        <p class="mt-2 text-brand-dark dark:text-brand-light text-lg">
-          Questo layout cambia automaticamente in base al tema del tuo sistema operativo.
-        </p>
-      </header>
-    
-      <main class="space-y-6">
-        <div class="p-6 rounded-lg bg-white dark:bg-brand-secondary/30 shadow">
-          <h2 class="text-2xl font-semibold">Contenuto principale</h2>
-          <p class="mt-2">Il testo, lo sfondo e i colori reagiscono automaticamente alla dark mode.</p>
-        </div>
-    
-        <a href="#" class="text-brand-accent dark:text-brand-primary underline hover:opacity-80">
-          Scopri di più
-        </a>
-      </main>
-    
-      <footer class="mt-12 border-t border-brand-primary dark:border-brand-light pt-6 text-sm text-brand-dark dark:text-brand-light">
-        &copy; 2025 - Tema reattivo con TailwindCSS.
-      </footer>
-    
+
+  <header class="mb-8">
+    <h1 class="text-4xl font-bold text-brand-primary dark:text-brand-secondary">
+      Modalità Chiara & Scura
+    </h1>
+    <p class="mt-2 text-brand-dark dark:text-brand-light text-lg">
+      Questo layout cambia automaticamente in base al tema del tuo sistema operativo.
+    </p>
+  </header>
+
+  <main class="space-y-6">
+    <div class="p-6 rounded-lg bg-white dark:bg-brand-secondary/30 shadow">
+      <h2 class="text-2xl font-semibold">Contenuto principale</h2>
+      <p class="mt-2">Il testo, lo sfondo e i colori reagiscono automaticamente alla dark mode.</p>
+    </div>
+
+    <a href="#" class="text-brand-accent dark:text-brand-primary underline hover:opacity-80">
+      Scopri di più
+    </a>
+  </main>
+
+  <footer
+    class="mt-12 border-t border-brand-primary dark:border-brand-light pt-6 text-sm text-brand-dark dark:text-brand-light">
+    &copy; 2025 - Tema reattivo con TailwindCSS.
+  </footer>
+
 </body>
+
 </html>
