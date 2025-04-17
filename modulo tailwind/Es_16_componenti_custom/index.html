@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componenti Personalizzati Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+      },
+      plugins: [
+        function({ addComponents }) {
+          addComponents({
+            '.btn-custom': {
+              '@apply py-2 px-4 rounded-lg font-medium transition-colors duration-200': '',
+              '&:hover': {
+                '@apply shadow-md': '',
+              },
+              '&-primary': {
+                '@apply bg-blue-600 text-white hover:bg-blue-700': '',
+              },
+              '&-secondary': {
+                '@apply bg-gray-200 text-gray-800 hover:bg-gray-300': '',
+              },
+              '&-outline': {
+                '@apply border border-gray-300 bg-transparent hover:bg-gray-50': '',
+              },
+            },
+            '.card-custom': {
+              '@apply rounded-xl shadow-md overflow-hidden bg-white': '',
+              '&-header': {
+                '@apply p-4 border-b border-gray-100 bg-gray-50': '',
+              },
+              '&-body': {
+                '@apply p-4': '',
+              },
+              '&-footer': {
+                '@apply p-4 border-t border-gray-100 bg-gray-50': '',
+              },
+            }
+          });
+        }
+      ]
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer components {
+      /* Puoi aggiungere altri componenti qui se preferisci */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-8">
+  <div class="max-w-3xl mx-auto space-y-8">
+    <h1 class="text-3xl font-bold text-gray-800">Componenti Personalizzati</h1>
+    
+    <!-- Bottoni personalizzati -->
+    <div class="space-x-4">
+      <button class="btn-custom btn-custom-primary">Primario</button>
+      <button class="btn-custom btn-custom-secondary">Secondario</button>
+      <button class="btn-custom btn-custom-outline">Outline</button>
+    </div>
+    
+    <!-- Card personalizzata -->
+    <div class="card-custom">
+      <div class="card-custom-header">
+        <h2 class="text-xl font-semibold text-gray-700">Titolo Card</h2>
+      </div>
+      <div class="card-custom-body">
+        <p class="text-gray-600">Questo è un esempio di card personalizzata creata con il layering di Tailwind CSS. Puoi facilmente riutilizzare questo componente in tutta la tua applicazione.</p>
+      </div>
+      <div class="card-custom-footer flex justify-end space-x-3">
+        <button class="btn-custom btn-custom-outline">Annulla</button>
+        <button class="btn-custom btn-custom-primary">Salva</button>
+      </div>
+    </div>
+    
+    <!-- Altra card con variante -->
+    <div class="card-custom">
+      <div class="card-custom-header bg-blue-50 border-blue-200">
+        <h2 class="text-xl font-semibold text-blue-700">Card Speciale</h2>
+      </div>
+      <div class="card-custom-body">
+        <p class="text-gray-600">Questa card dimostra come puoi estendere e modificare i componenti base aggiungendo classi aggiuntive.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
