@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuovo Esercizio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="p-10 space-y-4 bg-gray-100 dark:bg-gray-900 min-h-screen flex flex-col items-start gap-4">
+
+        <!-- 1. Pulsante Colore classico -->
+        <button class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-800 transition">
+          Cambia colore
+        </button>
+      
+        <!-- 2. Pulsante con Scala -->
+        <button class="px-6 py-2 bg-green-500 text-white rounded-md hover:scale-110 hover:bg-green-600 transition-transform duration-300">
+          Scala al passaggio
+        </button>
+      
+        <!-- 3. Pulsante con Ombra intensa -->
+        <button class="px-6 py-2 bg-white text-black border border-gray-400 rounded-md shadow hover:shadow-2xl transition-shadow">
+          Ombra profonda
+        </button>
+      
+        <!-- 4. Pulsante con bordo animato -->
+        <button class="relative group px-6 py-2 border-2 border-pink-500 text-pink-500 rounded-md overflow-hidden">
+          <span class="relative z-10 group-hover:text-white transition">Bordo animato</span>
+          <span class="absolute inset-0 bg-pink-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"></span>
+        </button>
+      
+        <!-- 5. Pulsante con icona che ruota -->
+        <button class="flex items-center gap-2 px-6 py-2 bg-yellow-400 text-black rounded-md hover:bg-yellow-500 transition">
+          <svg class="w-5 h-5 transition-transform duration-300 group-hover:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          <span>Con icona</span>
+        </button>
+      
+        <!-- 6. Pulsante con animazione bounce -->
+        <button class="px-6 py-2 bg-purple-600 text-white rounded-md hover:animate-bounce">
+          Bounce
+        </button>
+
+        <!-- 7. Pulsante con testo che scivola -->
+        <button class="relative px-6 py-2 bg-black text-white overflow-hidden rounded group">
+            <span class="relative z-10">Testo che scivola</span>
+            <span class="absolute left-0 bottom-0 w-full h-0.5 bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
+          </button>
+        
+          <!-- 8. Pulsante con sfumatura -->
+          <button class="px-6 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded hover:from-pink-500 hover:to-yellow-500 transition-all duration-500">
+            Sfumatura animata
+          </button>
+        
+          <!-- 9. Pulsante con bordo "rimbalzante" -->
+          <button class="px-6 py-2 border-2 border-red-500 text-red-500 rounded hover:border-dashed hover:animate-pulse transition-all">
+            Bordo pulsante
+          </button>
+        
+          <!-- 10. Pulsante con testo che cambia -->
+          <button class="px-6 py-2 bg-teal-600 text-white rounded group hover:bg-teal-700 transition">
+            <span class="group-hover:hidden">Passa sopra</span>
+            <span class="hidden group-hover:inline">Sorpresa! 🎉</span>
+          </button>
+        
+          <!-- 11. Pulsante con focus visivo -->
+          <button class="px-6 py-2 bg-indigo-600 text-white rounded focus:outline-none focus:ring-4 focus:ring-indigo-300">
+            Focus visivo
+          </button>
+        
+          <!-- 12. Pulsante che si "abbassa" al click -->
+          <button class="px-6 py-2 bg-pink-600 text-white rounded active:translate-y-1 transition-transform">
+            Si abbassa al click
+          </button>
+
+          <style>
+            /* Pulsante effetto vetro */
+            .glass {
+              background: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(10px);
+              border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+          </style>
+          
+          <div class="space-y-4 p-10 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 min-h-screen">
+          
+            <!-- 13. Pulsante Glassmorphism -->
+            <button class="glass text-white px-6 py-2 rounded-lg hover:bg-white/20 transition">
+              Effetto Vetro
+            </button>
+          
+            <!-- 14. Pulsante 3D -->
+            <button class="px-6 py-2 bg-gray-800 text-white rounded-lg shadow-[0_4px_0_0_#333] hover:translate-y-1 hover:shadow-[0_2px_0_0_#333] transition-all">
+              Pulsante 3D
+            </button>
+          
+            <!-- 15. Pulsante Neon Glow -->
+            <button class="px-6 py-2 bg-black text-green-400 border border-green-400 rounded hover:shadow-[0_0_10px_#00ff88] transition">
+              Neon Glow
+            </button>
+          
+            <!-- 16. Pulsante con loading spinner (finto) -->
+            <button class="px-6 py-2 bg-blue-600 text-white rounded flex items-center gap-2 group hover:bg-blue-700 transition">
+              <svg class="w-4 h-4 animate-spin hidden group-hover:inline-block" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 4v1m0 14v1m8.66-8.66l-.7.7M4.34 4.34l-.7.7M20 12h1M3 12H2m16.66 4.66l-.7-.7M4.34 19.66l-.7-.7" />
+              </svg>
+              <span>Caricamento...</span>
+            </button>
+          
+            <!-- 17. Pulsante con bordo arcobaleno -->
+            <button class="relative px-6 py-2 bg-white text-black rounded-lg border-4 border-transparent hover:border-gradient-to-r from-pink-500 via-yellow-500 to-purple-500 hover:scale-105 transition">
+              Bordo Arcobaleno 🌈
+            </button>
+          
+            <!-- 18. Pulsante "Magnetico" (simulato con scale + translate) -->
+            <button class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:scale-110 hover:-translate-y-1 transition-transform duration-300">
+              Effetto Magnetico
+            </button>
+      
+      </div>
+
+     
+      
+      
+</body>
+</html>
