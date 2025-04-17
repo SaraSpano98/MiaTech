@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form con Elementi Disabilitati</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg shadow-md p-6 w-full max-w-md">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6">Modulo di Registrazione</h1>
+        
+        <form class="space-y-4">
+            <!-- Campo nome - abilitato -->
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nome completo</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed"
+                    placeholder="Inserisci il tuo nome">
+            </div>
+            
+            <!-- Campo email - disabilitato -->
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email (disabilitato)</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    disabled
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed"
+                    placeholder="email@esempio.com">
+            </div>
+            
+            <!-- Selezione ruolo - abilitato -->
+            <div>
+                <label for="role" class="block text-sm font-medium text-gray-700 mb-1">Ruolo</label>
+                <select 
+                    id="role" 
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed">
+                    <option value="">Seleziona un ruolo</option>
+                    <option value="admin">Amministratore</option>
+                    <option value="user">Utente</option>
+                    <option value="guest">Ospite</option>
+                </select>
+            </div>
+            
+            <!-- Checkbox - disabilitato -->
+            <div class="flex items-center">
+                <input 
+                    type="checkbox" 
+                    id="newsletter" 
+                    disabled
+                    class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded disabled:bg-gray-200 disabled:cursor-not-allowed">
+                <label for="newsletter" class="ml-2 block text-sm text-gray-700">Iscriviti alla newsletter (disabilitato)</label>
+            </div>
+            
+            <div class="flex space-x-4 pt-2">
+                <!-- Pulsante primario - abilitato -->
+                <button 
+                    type="submit" 
+                    class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:bg-blue-300 disabled:cursor-not-allowed transition-colors">
+                    Registrati
+                </button>
+                
+                <!-- Pulsante secondario - disabilitato -->
+                <button 
+                    type="button" 
+                    disabled
+                    class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed transition-colors">
+                    Annulla (disabilitato)
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
