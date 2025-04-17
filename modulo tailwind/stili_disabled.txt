@@ -1,0 +1,160 @@
+BODY:
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+Stili del body:
+
+bg-gray-100: sfondo grigio chiaro
+min-h-screen: altezza minima pari alla viewport
+flex: layout flexbox
+items-center justify-center: centra il contenuto verticalmente e orizzontalmente
+p-4: padding di 4 unità (16px)
+
+
+CONTENITORE DEL FORM:
+<div class="bg-white rounded-lg shadow-md p-6 w-full max-w-md">
+
+bg-white: sfondo bianco
+rounded-lg: bordi arrotondati (large)
+shadow-md: ombreggiatura media
+p-6: padding di 6 unità (24px)
+w-full max-w-md: larghezza piena ma massimo di "medium" (448px)
+
+
+TITOLO DEL FORM:
+<h1 class="text-2xl font-bold text-gray-800 mb-6">Modulo di Registrazione</h1>
+
+text-2xl: dimensione testo extra-large (24px)
+font-bold: testo in grassetto
+text-gray-800: colore testo grigio scuro
+mb-6: margin-bottom di 6 unità (24px)
+
+
+STRUTTURA DEL FORM:
+<form class="space-y-4"> ____  space-y-4: aggiunge spazio verticale (16px) tra gli elementi figli
+
+
+CAMPO INPUT(ABILITATO):
+<div>
+    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nome completo</label>
+    <input 
+        type="text" 
+        id="name" 
+        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed"
+        placeholder="Inserisci il tuo nome">
+</div>
+
+Label:
+block: rende l'elemento di tipo block (occupa tutta la larghezza)
+text-sm: testo piccolo (14px)
+font-medium: peso del font medio
+text-gray-700: colore testo grigio
+mb-1: margin-bottom di 1 unità (4px)
+
+Input:
+w-full: larghezza al 100%
+px-4 py-2: padding orizzontale 16px, verticale 8px
+border border-gray-300: bordo grigio chiaro
+rounded-md: bordi arrotondati (medium)
+
+Stati speciali:
+
+Focus: focus:outline-none focus:ring-2 focus:ring-blue-500 (rimuove outline default e aggiunge anello blu)
+Disabilitato: disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed
+
+
+CAMPO INPUT(DISABILITATO):
+<input 
+    type="email" 
+    id="email" 
+    disabled
+    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed"
+    placeholder="email@esempio.com">
+
+L'attributo disabled disabilita l'input
+Le classi disabled:* modificano l'aspetto:
+Sfondo più chiaro (bg-gray-100)
+Testo grigio (text-gray-500)
+Cursore "non permesso" (cursor-not-allowed)
+
+
+SELECT(DROPDOWN):
+
+<select 
+    id="role" 
+    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed">
+
+Stile simile agli input con le stesse classi per lo stato disabilitato
+
+
+CHECKBOX DISABILITATA:
+<input 
+    type="checkbox" 
+    id="newsletter" 
+    disabled
+    class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded disabled:bg-gray-200 disabled:cursor-not-allowed">
+
+h-4 w-4: dimensioni fisse (16px)
+text-blue-600: colore quando selezionato
+
+Stato disabilitato:
+disabled:bg-gray-200: sfondo più chiaro
+disabled:cursor-not-allowed: cursore di non permesso
+
+
+PULSANTI:
+
+PULSANTI PRIMARIO(Abilitato):
+
+<button 
+    type="submit" 
+    class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:bg-blue-300 disabled:cursor-not-allowed transition-colors">
+    Registrati
+</button>
+
+px-4 py-2: padding
+bg-blue-600: sfondo blu scuro
+text-white: testo bianco
+
+Stati:
+
+Hover: hover:bg-blue-700 (blu più scuro)
+Focus: focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 (anello blu con offset)
+Disabilitato: disabled:bg-blue-300 disabled:cursor-not-allowed (blu chiaro)
+
+
+PULSANTI SECONDARIO(Disabilitato):
+
+<button 
+    type="button" 
+    disabled
+    class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed transition-colors">
+    Annulla (disabilitato)
+</button>
+
+Attributo disabled disabilita il pulsante
+transition-colors: animazione fluida al cambio di colore
+
+
+10. Concetti Chiave Tailwind
+Utility-First: Ogni classe rappresenta una proprietà CSS atomica
+
+Stati Varianti:
+
+hover:: stile al passaggio del mouse
+focus:: stile quando l'elemento ha focus
+disabled:: stile quando l'elemento è disabilitato
+
+Design System:
+
+Colori: blue-500, gray-300, etc. (500 è il tono medio)
+Spazi: p-4, m-2, etc. (1 unità = 4px)
+Dimensioni: text-sm, text-xl, etc.
+
+11. Accessibilità
+Gli stili per gli stati disabilitati (disabled:) migliorano l'UX:
+cursor-not-allowed indica chiaramente che l'elemento non è interattivo
+Cambiamento di colore segnala lo stato non disponibile
+Focus styles (focus:ring) aiutano la navigazione da tastiera
+
+Questo approccio con Tailwind CSS permette di creare interfacce consistenti e accessibili con meno codice rispetto al CSS tradizionale.
