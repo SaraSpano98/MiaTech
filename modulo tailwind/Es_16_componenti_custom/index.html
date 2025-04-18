@@ -6,11 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Componenti Personalizzati Tailwind</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
   <script>
     tailwind.config = {
       theme: {
-        extend: {},
-      }
+        extend: {
+          colors: {
+            primary: {
+              600: '#2563eb',
+              700: '#1d4ed8',
+            },
+            secondary: {
+              200: '#e5e7eb', 
+              300: '#d1d5db',
+            },
+            outline: {
+              50: '#f9fafb',
+              100: '#f3f4f6',
+              300: '#d1d5db',
+            }
+          },
+        },
+      },
     }
   </script>
   <style type="text/tailwindcss">
