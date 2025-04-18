@@ -1,0 +1,35 @@
+COME INSTALLARE TAILWIND CSS IN VITE REACT 2025
+
+1. Andare sul sito: https://tailwindcss.com/docs/installation/using-vite
+
+2. Sul sito si trovano vari modi in generale per installare Tailwind CSS. Ovvero: 
+usando Vite, usando PostCSS, usando Tailwind CLI, Framework Guides ed infine, con la CDN. 
+
+3. Ovviamente bisogna prendere quello che si usa per Vite: (andare nell'apposito modulo, è nella stessa pagina, ma nella sezione dedicata)
+
+4. Nel terminal scrivere: npm create vite@latest
+
+5. Compare "Project name:". In questo caso, se non si vuole creare la sottocartella scrivere semplicemente un punto, così: " . "
+
+6. Selezionare il Framework: quindi, REACT
+
+7. Selezionare la variante: Javascript
+
+8. A questo punto, andare appunto sul sito di Tailwind e copiare questo: npm install tailwindcss @tailwindcss/vite, 
+mettendolo nel terminale su Visual Studio Code
+
+9. Nel terminale compare che si sono aggiunti vari packages e si sono trovate 0 vulnerabilità. A questo punto, andare di nuovo nella documentazione, 
+bisogna configurare il vite plugin. Come?  
+Nella documentazione dice di andare nel file chiamato: "vite.config.ts".
+Quindi, copiare solo le due righe che dobbiamo andare ad aggiungere al file: 
+"import tailwindcss from '@tailwindcss/vite'  &   "tailwindcss()" --> metterlo accanto al plugin presente(react());
+
+10. Nel file "index.css" & "App.css" eliminare il codice di default ed inserire: @import "tailwindcss"; (così come l'ho scritto)
+
+11. Dopo di che, nel terminale, scrivere: "npm install" 
+
+12. E sempre nel terminale, scrivere "npm run dev"
+
+13. Infine dovrebbe comparire questo:   Local: http://localhost:5173/.... fare click + CTRL
+
+14. Nel file App.jsx eliminare la parte di default.. e scrivere lì il codice. 
