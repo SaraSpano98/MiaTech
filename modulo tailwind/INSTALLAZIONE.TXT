@@ -33,3 +33,5 @@ Quindi, copiare solo le due righe che dobbiamo andare ad aggiungere al file:
 13. Infine dovrebbe comparire questo:   Local: http://localhost:5173/.... fare click + CTRL
 
 14. Nel file App.jsx eliminare la parte di default.. e scrivere lì il codice. 
+
+15. Infine, nel terminal dopo localhost, fare CTRL + C
