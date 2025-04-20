@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Layout - 3 Colonne</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-gray-100 p-6 flex justify-center items-center">
+
+  <!-- Container principale con layout orizzontale completamente centrato -->
+  <div class="flex flex-row gap-4">
+    
+    <!-- Colonna 1 -->
+    <div class="flex-1 bg-cyan-200 p-4 rounded shadow">
+      <h2 class="text-lg font-bold mb-2">Colonna 1</h2>
+      <p class="text-gray-600">Contenuto della prima colonna.</p>
+    </div>
+
+    <!-- Colonna 2 -->
+    <div class="flex-1 bg-sky-200 p-4 rounded shadow">
+      <h2 class="text-lg font-bold mb-2">Colonna 2</h2>
+      <p class="text-gray-600">Contenuto della seconda colonna.</p>
+    </div>
+
+    <!-- Colonna 3 -->
+    <div class="flex-1 bg-blue-200 p-4 rounded shadow">
+      <h2 class="text-lg font-bold mb-2">Colonna 3</h2>
+      <p class="text-gray-600">Contenuto della terza colonna.</p>
+    </div>
+
+  </div>
+
+</body>
+
+<main class="min-h-screen bg-gray-100 p-6 flex justify-center items-center">
+
+     <!-- Container principale con layout verticale completamente centrato -->
+    <div class="flex flex-col gap-4">
+    
+        <!-- Riga 1 -->
+        <div class="flex-1 bg-indigo-200 p-8 rounded shadow">
+          <h2 class="text-lg font-bold mb-4 text-center">Colonna 1</h2>
+          <p class="text-gray-600">Contenuto della prima riga.</p>
+        </div>
+    
+        <!-- Riga 2 -->
+        <div class="flex-1 bg-violet-200 p-8 rounded shadow">
+          <h2 class="text-lg font-bold mb-4 text-center">Colonna 2</h2>
+          <p class="text-gray-600">Contenuto della seconda riga.</p>
+        </div>
+    
+        <!-- Riga 3 -->
+        <div class="flex-1 bg-purple-200 p-8 rounded shadow">
+          <h2 class="text-lg font-bold mb-4 text-center">Colonna 3</h2>
+          <p class="text-gray-600">Contenuto della terza riga.</p>
+        </div>
+    
+      </div>
+
+</main>
+
+</html>
