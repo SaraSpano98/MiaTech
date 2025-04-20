@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout con Elementi Condizionali</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4">
+    <h1 class="text-xl font-bold">Responsive Layout con elementi visibili/nascosti</h1>
+  </header>
+
+  <!-- Menu mobile (solo su schermi piccoli) -->
+  <nav class="block md:hidden bg-white p-4 shadow">
+    <p class="text-sm text-blue-600 font-semibold">Menu Mobile</p>
+    <ul class="mt-2 space-y-1">
+      <li><a href="#" class="text-gray-700 hover:underline">Home</a></li>
+      <li><a href="#" class="text-gray-700 hover:underline">Chi siamo</a></li>
+    </ul>
+  </nav>
+
+  <!-- Layout principale -->
+  <div class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Sidebar (visibile solo da md in su) -->
+    <aside class="hidden md:block md:w-1/4 bg-white p-4 shadow-md">
+      <h2 class="text-lg font-semibold mb-2">Sidebar</h2>
+      <ul class="space-y-2">
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-100">Dashboard</a></li>
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-100">Impostazioni</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenuto principale -->
+    <main class="flex-1 p-4">
+      <h2 class="text-2xl font-semibold mb-4">Contenuto Principale</h2>
+      <p>
+        Questo layout nasconde o mostra elementi in base alla larghezza dello schermo usando <code>hidden</code> e <code>md:block</code>.
+      </p>
+
+      <!-- Sezione visibile solo su desktop -->
+      <div class="hidden lg:block mt-6 p-4 bg-green-100 rounded">
+        <p>👀 Questo box è visibile solo su schermi grandi (lg e superiori).</p>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center p-4">
+    <p class="text-sm">&copy; 2025 - Footer sempre visibile</p>
+  </footer>
+
+</body>
+</html>
