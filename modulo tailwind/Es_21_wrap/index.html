@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Layout: Esempio 1 </title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-gray-100 p-6">
+
+  <!-- Container flessibile con wrap-->
+  <div class="flex flex-wrap gap-4">
+    
+    <!-- Elementi del layout -->
+    <div class="bg-cyan-200 p-4 rounded shadow">
+      <h2 class="text-lg font-bold mb-2">Box 1</h2>
+      <p class="text-gray-600">Contenuto del box 1</p>
+    </div>
+
+    <div class="bg-sky-200 p-4 rounded shadow">
+      <h2 class="text-lg font-bold mb-2">Box 2</h2>
+      <p class="text-gray-600">Contenuto del box 2</p>
+    </div>
+
+    <div class="bg-blue-200 p-4 rounded shadow">
+      <h2 class="text-lg font-bold mb-2">Box 3</h2>
+      <p class="text-gray-600">Contenuto del box 3.</p>
+    </div>
+ 
+    <!--differenza di padding e il margin-bottom in cui questa parte è differente dai primi 3 box (esperimento di visualizzazione)-->
+    <div class="bg-indigo-200 p-8 rounded shadow">
+        <h2 class="text-lg font-bold mb-4 text-center">Box 4</h2>
+        <p class="text-gray-600">Contenuto del box 4.</p>
+    </div>
+  
+    <div class="bg-violet-200 p-8 rounded shadow">
+        <h2 class="text-lg font-bold mb-4 text-center">Colonna 5</h2>
+        <p class="text-gray-600">Contenuto del box 5.</p>
+    </div>
+  
+    <div class="bg-purple-200 p-8 rounded shadow">
+        <h2 class="text-lg font-bold mb-4 text-center">Box 6</h2>
+        <p class="text-gray-600">Contenuto del box 6.</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
