@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Layout Responsivo</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-lime-100 min-h-screen p-6">
+
+  <!-- Intestazione -->
+  <header class="mb-8 text-center bg-orange-300">
+    <h1 class="text-3xl font-bold text-gray-800">Layout Responsivo</h1>
+    <p class="text-gray-600 mt-2">Adattato con sm:, md: e lg:</p>
+  </header>
+
+  <!-- Contenitore responsive -->
+  <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    <!-- Box 1 -->
+    <div class="bg-pink-100 p-6 rounded shadow">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Colonna 1</h2>
+      <p class="text-gray-600">Contenuto della colonna 1</p>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="bg-pink-200 p-6 rounded shadow">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Colonna 2</h2>
+      <p class="text-gray-600">Contenuto della colonna 2</p>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="bg-pink-300 p-6 rounded shadow">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Colonna 3</h2>
+      <p class="text-gray-600">Contenuto della colonna 3</p>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="bg-pink-400 p-6 rounded shadow">
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Colonna 4</h2>
+        <p class="text-gray-600">Contenuto della colonna 4</p>
+      </div>
+
+  </div>
+
+</body>
+</html>
