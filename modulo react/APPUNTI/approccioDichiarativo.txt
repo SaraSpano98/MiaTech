@@ -1,0 +1,22 @@
+APPROCCIO DICHIARATIVO: COSA SIGNIFICA? 
+
+
+React viene descritto come un approccio dichiarativo alla creazione di interfacce utente. 
+
+React ha reso la creazione di interfacce utente molto più dichiarativa rispetto ai template HTML:
+- si può creare interfacce Web senza nemmeno toccare direttamente il DOM;
+- è possibile avere un sistema di eventi senza dover interagire con gli eventi DOM veri e propri.
+
+L'OPPOSTO DI DICHIARATIVO è IMPERATIVO. 
+Un esempio comune di approccio imperativo è la ricerca di elementi nel DOM tramite jQuery o eventi DOM. 
+---> Si dice al browser esattamente cosa fare, invece di dirgli cosa serve.
+
+L'approccio dichiarativo di React astrae questo aspetto per noi. 
+Ci limitiamo a dire a React che vogliamo che un componente venga renderizzato in un modo specifico, 
+e non dobbiamo mai interagire con il DOM per farvi riferimento in seguito.
+
+DIFFERENZA TRA IMPERATIVO & DICHIARATIVO: 
+
+In termini di interfacce utente web: 
+- APPROCCIO IMPERATIVO: quando si fornisce istruzioni dettagliate su come raggiungere l'interfaccia utente desiderata
+- APPROCCIO DICHIARATIVO: quando si descrive lo stato finale dell'interfaccia utente desiderata
