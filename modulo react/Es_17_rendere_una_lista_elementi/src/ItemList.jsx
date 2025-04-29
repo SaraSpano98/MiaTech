@@ -1,9 +1,9 @@
 import React from 'react';
 
-function ItemList({ elements }) {
+function ItemList({ items }) {
   return (
     <ul>
-      {elements.map((item, index) => (
+      {items.map((item, index) => (
         <li key={index}>{item}</li>
       ))}
     </ul>
