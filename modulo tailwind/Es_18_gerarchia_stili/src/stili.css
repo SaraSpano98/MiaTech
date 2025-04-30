@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+    --font-heading-1: 700; /* bold */
+    --font-heading-2: 600;  /* semibold */
+
+    --size-primary: 2.25rem; /* equivalente a text-4xl */
+    --size-secondary: 1.5rem; /* text-2x */
+    --size-paragraph: 1rem; /* text-base */
+
+    --color-heading-1: #111827; /* gray-900 */
+    --color-secondary: #1F2937; /* gray-800 */
+    --color-heading-2: #374151; /* gray-700 */
+    --color-paragraph: #4B5563; /* gray-600 */
+    --color-button-secondary: #E5E7EB; /* gray-200 */
+    --color-primary: #FFFFFF;
+    --color-button-primary: #2563EB; /* blue-600 */
+}
+
+.paragraph {
+    line-height: 1.625; /* leading-relaxed (approx. 1.625) */
+    margin-bottom: 1.5rem; /* Aggiunge uno spazio sotto il paragrafo */
+}
+
+.button-primary {
+    padding: 0.5rem 1rem;        /* py-2 px-4 */
+    border-radius: 0.75rem;      /* rounded-xl */
+    transition: background-color 0.2s;
+}
+
+.button-primary:hover {
+    background-color: #1D4ED8;   /* blue-700 */
+}
+
+.button-secondary {
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    transition: background-color 0.2s;
+}
+
+.button-secondary:hover {
+    background-color: #bcbfc5; 
+}
+
+.container-text {
+    width: 100%;
+    max-width: 1160px;
+    padding: 0 1.25rem;
+}
