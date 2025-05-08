@@ -2,18 +2,34 @@ import React from 'react';
 import { useContext } from 'react';
 import { TodoContext } from './TodoContext.jsx';
 
-function TodoList() {
-  const { todos } = useContext(TodoContext); // Accedi ai to-do
+const TodoList = () => {
+  const {
+    todos,
+    newTodo,
+    setNewTodo,
+    handleAddTodo,
+  } = useContext(TodoContext);
 
   return (
-    <ul>
-      {todos.map((todo) => (
-        <li key={todo.id}>
-          {todo.testo} {todo.completato ? '✅' : '❌'}
-        </li>
-      ))}
-    </ul>
+    <div>
+      <h1>Lista dei Todo</h1>
+
+      <input
+        type="text"
+        placeholder="Aggiungi un nuovo todo"
+        value={newTodo}
+        onChange={(e) => setNewTodo(e.target.value)}
+      />
+      <button onClick={handleAddTodo}>Aggiungi</button>
+
+      <ul>
+        {todos.map(todo => (
+          <li key={todo.id}>{todo.text}</li>
+        ))}
+      </ul>
+    </div>
   );
-}
+};
 
 export default TodoList;
+

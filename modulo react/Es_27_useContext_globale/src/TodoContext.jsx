@@ -1,18 +1,30 @@
 import React from 'react';
 import { createContext, useState } from 'react';
 
-// Crea il contesto
 export const TodoContext = createContext();
 
-// Crea il provider
 export const TodoProvider = ({ children }) => {
-  const [todos, setTodos] = useState([
-    { id: 1, testo: 'Studiare React', completato: false },
-    { id: 2, testo: 'Fare esercizi', completato: true },
-  ]);
+  const [todos, setTodos] = useState([]);
+  const [newTodo, setNewTodo] = useState('');
+
+  const handleAddTodo = () => {
+    if (newTodo.trim() !== '') {
+      const newTodoItem = {
+        id: todos.length + 1,
+        text: newTodo,
+      };
+      setTodos([...todos, newTodoItem]);
+      setNewTodo('');
+    }
+  };
 
   return (
-    <TodoContext.Provider value={{ todos, setTodos }}>
+    <TodoContext.Provider value={{
+      todos,
+      newTodo,
+      setNewTodo,
+      handleAddTodo,
+    }}>
       {children}
     </TodoContext.Provider>
   );
