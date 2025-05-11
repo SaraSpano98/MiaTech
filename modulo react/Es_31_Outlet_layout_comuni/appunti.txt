@@ -1,0 +1,3 @@
+Questo esercizio lo riporto all'esercizio n° 29. Lì troverò il tutto! 
+
+L'esercizio comporta di creare un file Layout.jsx e "<outlet/>" per il contenuto variabile
