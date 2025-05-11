@@ -1,4 +1,6 @@
 import { useContext, useState } from "react";
+{/*Importa il link*/}
+import { Link } from "react-router-dom";
 import { TodoContext } from "./TodoContext.jsx";
 
 const TodoList = () => {
@@ -38,6 +40,10 @@ const TodoList = () => {
             >
               {todo.text}
             </span>
+            {/* Link ai dettagli del to-do */}
+            <Link to={`/todo/${todo.id}`} style={{ marginLeft: "10px" }}>
+              Dettagli
+            </Link>
           </li>
         ))}
       </ul>
