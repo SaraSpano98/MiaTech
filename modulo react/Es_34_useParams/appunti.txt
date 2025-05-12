@@ -1,0 +1,37 @@
+Per fare questo esercizio: creare un file TodoDetail.jsx: 
+import { useContext } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { TodoContext } from "./TodoContext";
+
+const TodoDetail = () => {
+  const { id } = useParams(); // Otteniamo l'ID del to-do dalla URL
+  const { todos } = useContext(TodoContext);
+  const navigate = useNavigate();
+
+  // Trova il to-do corrispondente all'ID
+  const todo = todos.find((todo) => todo.id === parseInt(id));
+
+  if (!todo) {
+    return <p>To-do non trovato!</p>;
+  }
+
+  return (
+    <div>
+      <h2>Dettagli To-do</h2>
+      <p><strong>ID:</strong> {todo.id}</p>
+      <p><strong>Testo:</strong> {todo.text}</p>
+      <p><strong>Completato:</strong> {todo.completed ? "Sì" : "No"}</p>
+
+      {/* Pulsante per tornare alla lista dei to-do */}
+      <button onClick={() => navigate("/")}>Torna alla lista</button>
+    </div>
+  );
+};
+
+export default TodoDetail;
+
+poi, modificare App.jsx per includere la nuova rotta nella parte dell'import e del route.
+
+Infine, TodoList.jsx: devo importare il link e questo pezzo:
+<Link to={/todo/${todo.id}}> crea un link che naviga alla pagina dei dettagli del to-do con l'ID corrispondente. Così facendo, 
+quando l'utente clicca sul link "Dettagli", verrà reindirzzato alla pagina /todo/:id.
