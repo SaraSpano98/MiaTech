@@ -2,7 +2,8 @@
 export interface Todo {
   id: number;
   title: string;
-  completed: boolean;
+  //completed: boolean;
+  status: TodoStatus; //ESERCIZIO: utilizzare un Enum per lo stato del Todo.
   userId?: number; // ESERCIZIO: associare Todo con Utenti
   metadata?: string | object; // ESERCIZIO: utilizzare il tipo any / utilizzare tipi unions
 }
@@ -30,4 +31,10 @@ export interface Project {
   todos: Todo[];
 }
 
+// ESERCIZIO: Enum TodoStatus
+export enum TodoStatus {
+  Pending = 'Pending',
+  InProgress = 'InProgress',
+  Completed = 'Completed',
+}
 
